@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Valley+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Valley Sans', sans-serif;
+}
+
+.Hero .col img {
+    width: 500px;
+}
+
+.section {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.About .col img {
+    width: 75%;
+}
+
+@media (max-width: 768px) {
+    .Hero .col img {
+        width: 100%;
+    }
+
+    .About .col img {
+        width: 100%;
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.animate-on-scroll.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#recent .animate-on-scroll:nth-child(3) {
+    transition-delay: 0.15s;
+}
+
+#recent .animate-on-scroll:nth-child(4) {
+    transition-delay: 0.3s;
+}
+

@@ -46,3 +46,6 @@ body {
     transition-delay: 0.3s;
 }
 
+html, body {
+    overflow-x: hidden;
+}

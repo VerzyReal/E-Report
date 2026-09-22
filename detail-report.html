@@ -22,6 +22,35 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
         integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Gambar report: tinggi menyesuaikan layar kecil */
+        .report-image {
+            height: 400px;
+        }
+
+        @media (max-width: 768px) {
+            .report-image {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .report-image {
+                height: 200px;
+            }
+
+            h1.fw-bold {
+                font-size: 1.5rem;
+            }
+        }
+
+        .report-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
@@ -61,96 +90,74 @@
     </nav>
     <!-- navbar end -->
 
-    <!-- Reports -->
-    <!-- Filter & Search -->
-    <div class="row mb-4 g-2 align-items-center">
-        <div class="col-md-4">
-            <input type="text" class="form-control shadow-sm" placeholder="Cari laporan..." />
-        </div>
-        <div class="col-md-3">
-            <select class="form-select shadow-sm">
-                <option selected>Filter Kategori</option>
-                <option value="fasilitas">Fasilitas</option>
-                <option value="2">Non Akademik</option>
-            </select>
-        </div>
-        <div class="col-md-3">
-            <select class="form-select shadow-sm">
-                <option selected>Urutkan</option>
-                <option value="newest">Terbaru</option>
-                <option value="oldest">Terlama</option>
-                <option value="popular">Terpopuler</option>
-            </select>
-        </div>
-        <div class="col-md-2">
-            <button class="btn btn-primary w-100 shadow-sm">
-                <i class="bi bi-funnel"></i>
-                Filter
-            </button>
+    <div class="container px-3 px-md-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+        <div class="row mt-3 g-4">
+            <div class="col-12 col-lg-8">
+                <h1 class="fw-bold mb-3 mb-md-4">Laporan Masjid Kotor</h1>
+                <p class="text secondary mb-3 mb-md-4">By <a class="text-decoration-none fw-semibold"
+                        href="#">Adib Harun Syah</a> | 2 jam yang lalu</p>
+
+                <div class="report-image">
+                    <img src="./images/Masjid kotor.png" class="rounded" alt="Report Image">
+                </div>
+
+                <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                <blockquote class="border-start border-3 p-3 fst-italic text-secondary">lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit.</blockquote>
+                <p class="lh-lg">Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+
+                <hr>
+                <h4 class="fw-semibold komentar">Komentar</h4>
+                <div>
+                    <textarea class="form-control rounded-2" id=""></textarea>
+                </div>
+                <button class="btn btn-primary mt-2">Kirim <i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+            <!-- SideBar -->
+            <div class="col-12 col-lg-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="reports.html">All Report</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Laporan Masjid Kotor</li>
+                    </ol>
+                </nav>
+
+                <div class="card">
+                    <div class="card-header bg-primary-subtle">
+                        <h5 class="card-title fw-bold">Recent Reports</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><a href="#" class="text-decoration-none">Laporan Jalan
+                                    Rusak</a></li>
+                            <li class="list-group-item"><a href="#" class="text-decoration-none">Laporan Sampah
+                                    Menumpuk</a></li>
+                            <li class="list-group-item"><a href="#" class="text-decoration-none">Laporan Lampu
+                                    Mati</a></li>
+                            <li class="list-group-item"><a href="#" class="text-decoration-none">Laporan Air
+                                    Tergenang</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card shadow-sm mt-3">
+                    <div class="card-header fw-bold">Kategori</div>
+                    <div class="card-body d-flex flex-wrap gap-2">
+                        <a href="#" class="badge bg-primary text-decoration-none">Report</a>
+                        <a href="#" class="badge bg-success text-decoration-none">Fasilitas</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!-- Recent section -->
-    <section id="recent" class="Recent py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center" data-aos="fade-up">
-                    <h1 class="fw-bold mb-4">Recent Reports</h1>
-                    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-                </div>
 
-                <div class="col-12 col-md-6 d-flex justify-content-center col-lg-4 mb-4" data-aos="flip-up"
-                    data-aos-delay="0">
-                    <div class="card" style="width: 18rem;">
-                        <p class="card-text text-center mt-2 text-muted">Report ID: 001</p>
-                        <img src="./images/dirty class.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Kelas Kotor Setelah Jam Olahraga</h5>
-                            <p class="card-text">Siswa melaporkan Ruang Kelas 10A masih dalam kondisi kotor setelah
-                                digunakan
-                                untuk kegiatan olahraga di jam sebelumnya.</p>
-                            <a href="#" class="btn btn-primary">Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 d-flex justify-content-center col-lg-4 mb-4" data-aos="flip-up"
-                    data-aos-delay="150">
-                    <div class="card" style="width: 18rem;">
-                        <p class="card-text text-center mt-2 text-muted">Report ID: 002</p>
-                        <img src="./images/ac ruusak.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">AC Rusak di Laboratorium Komputer</h5>
-                            <p class="card-text">Laporan masuk mengenai AC di Laboratorium Komputer yang tidak
-                                berfungsi sejak minggu lalu, membuat ruangan terasa panas.</p>
-                            <a href="#" class="btn btn-primary">Details</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-6 d-flex justify-content-center col-lg-4 mb-4" data-aos="flip-up"
-                    data-aos-delay="300">
-                    <div class="card" style="width: 18rem;">
-                        <p class="card-text text-center mt-2 text-muted">Report ID: 003</p>
-                        <img src="./images/Masjid kotor.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Dirty Masjid Report</h5>
-                            <p class="card-text">A recent report has been submitted regarding the cleanliness of the masjid.</p>
-                            <a href="detail-report.html" class="btn btn-primary">Details</a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Recent end -->
 
     <!-- Footer section -->
-    <footer data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" id="Footer" class="bg-primary-subtle py-4">
+    <footer data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" id="Footer"
+        class="bg-primary-subtle py-4">
         <div class="container">
             <div class="row justify-content-between row-gap-5 row-gap-lg-0">
-                <div class="col-lg-4 text-dark">
+                <div class="col-12 col-lg-4 text-dark">
                     <div class="d-flex align-items-center gap-2 mb-2">
                         <img src="./images/IDN logo.png" alt="IDN Logo" width="30"
                             class="d-inline-block align-text-top rounded">
@@ -159,7 +166,7 @@
                     <p class="opacity-75 lh-lg mb-0">Boring Ipsum color sits and meet.</p>
                 </div>
 
-                <div class="col-lg-2 text-dark d-flex flex-column gap-2">
+                <div class="col-6 col-lg-2 text-dark d-flex flex-column gap-2">
                     <h4 class="fw-bold">Menu</h4>
                     <a href="#" class="footer-link text-dark text-decoration-none">Home</a>
                     <a href="#" class="footer-link text-dark text-decoration-none">About</a>
@@ -168,7 +175,7 @@
                     <a href="#" class="footer-link text-dark text-decoration-none">FAQ's</a>
                 </div>
 
-                <div class="col-lg-4 d-flex flex-column gap-2">
+                <div class="col-12 col-lg-4 d-flex flex-column gap-2">
                     <h4 class="fw-bold text-dark">Contact Us!</h4>
                     <a target="_blank" href="mailto:vhsidnboardingschool@idn.sch.id"
                         class="fw-bold text-dark text-decoration-none footer-link d-flex align-items-center gap-2">

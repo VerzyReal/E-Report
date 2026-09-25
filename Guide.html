@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide - IDN E-Report</title>
+    <link rel="shortcut icon" href="./images/IDN logo.png" type="image/x-icon">
+
+    <!-- cdn css bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- cdn awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Mockup frame buat placeholder "screenshot" tampilan website */
+        .mockup-frame {
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .mockup-topbar {
+            background: #e9ecef;
+            padding: 6px 10px;
+            display: flex;
+            gap: 6px;
+        }
+
+        .mockup-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #adb5bd;
+        }
+
+        .mockup-body {
+            min-height: 180px;
+            background: #f8f9fa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6c757d;
+            font-size: 0.9rem;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .step-number {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-primary-subtle py-4">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="./images/IDN logo.png" alt="IDN Logo" width="30"
+                    class="d-inline-block alight-text-top rounded">
+                <span class="fw-bold text primary">IDN E-Report</span>
+            </a>
+            <button class="navbar-toggler bg-white shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto gap-3 text-center pt-4 pt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text primary" href="index.html#Home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text primary" href="index.html#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text primary" href="index.html#Service">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text primary" href="index.html#Recent">Recent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text primary" href="index.html#FAQ">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fw-bold text primary" href="Guide.html">Guide</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- Guide Hero -->
+    <section class="py-5 bg-light">
+        <div class="container text-center" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="fw-bold">Panduan Menggunakan IDN E-Report</h1>
+            <p class="lead">Ikuti langkah-langkah berikut untuk memahami navigasi, cara membuat laporan, dan cara
+                mengecek status laporan kamu.</p>
+        </div>
+    </section>
+    <!-- Guide Hero end -->
+
+    <!-- Step 1 -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4" data-aos="fade-up" data-aos-duration="800">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <span class="step-number bg-primary text-white">1</span>
+                        <h3 class="fw-bold mb-0">Buka Halaman Utama</h3>
+                    </div>
+                    <p class="text-secondary">Saat pertama kali membuka website IDN E-Report, kamu akan melihat
+                        halaman utama (Home). Di bagian atas ada navbar dengan menu <strong>Home</strong>,
+                        <strong>About</strong>, <strong>Service</strong>, <strong>Recent</strong>,
+                        <strong>FAQ</strong>, dan <strong>Guide</strong>. Di bagian Hero juga ada dua tombol: <strong>"Guide"</strong> untuk
+                        membuka panduan ini, dan <strong>"Let's start"</strong> untuk langsung menuju halaman
+                        laporan.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Mockup: placeholder screenshot halaman Home, ganti src di bawah dengan screenshot asli -->
+                    <div class="mockup-frame">
+                        <div class="mockup-topbar">
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                        </div>
+                        <div class="mockup-body p-0">
+                            <img src="./images/ss1.png" alt="Tampilan Navbar" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Step 1 end -->
+
+    <!-- Step 2 -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-4 flex-lg-row-reverse" data-aos="fade-up" data-aos-duration="800">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <span class="step-number bg-primary text-white">2</span>
+                        <h3 class="fw-bold mb-0">Klik "Let's Start"</h3>
+                    </div>
+                    <p class="text-secondary">Di halaman utama, klik tombol <strong>"Let's start"</strong> yang ada
+                        di sebelah tombol "Guide". Kamu akan langsung diarahkan ke halaman
+                        <code>reports.html</code> untuk mulai membuat laporan baru.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mockup-frame">
+                        <div class="mockup-topbar">
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                        </div>
+                        <div class="mockup-body p-0">
+                            <img src="./images/ss2.png" alt="Tampilan Hero" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Step 2 end -->
+
+    <!-- Step 3 -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4" data-aos="fade-up" data-aos-duration="800">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <span class="step-number bg-primary text-white">3</span>
+                        <h3 class="fw-bold mb-0">Tambah Laporan</h3>
+                    </div>
+                    <p class="text-secondary">Di halaman <code>reports.html</code>, kamu akan melihat daftar
+                        laporan yang sudah pernah dibuat sebelumnya. Untuk membuat laporan baru, klik tombol
+                        <strong>"Tambah Laporan"</strong> yang ada di halaman tersebut.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mockup-frame">
+                        <div class="mockup-topbar">
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                        </div>
+                        <div class="mockup-body p-0">
+                            <img src="./images/ss4.png" alt="Tampilan Halaman view all report" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Step 3 end -->
+
+    <!-- Step 4 -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center g-4 flex-lg-row-reverse" data-aos="fade-up" data-aos-duration="800">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <span class="step-number bg-primary text-white">4</span>
+                        <h3 class="fw-bold mb-0">Isi Form Laporan</h3>
+                    </div>
+                    <p class="text-secondary">Setelah klik "Tambah Laporan", akan muncul form berisi:
+                        <strong>Report Title</strong> (judul laporan), <strong>Report Category</strong> (pilih
+                        kategori laporan dari dropdown), <strong>Report Description</strong> (jelaskan detail
+                        kendala), dan <strong>Upload Foto</strong> (opsional, unggah foto sebagai bukti pendukung).
+                        Isi semua kolom dengan jelas, lalu klik <strong>Submit</strong>.
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mockup-frame">
+                        <div class="mockup-topbar">
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                        </div>
+                        <div class="mockup-body p-0">
+                            <img src="./images/ss3.png" alt="Tampilan Halaman view all report" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Step 4 end -->
+
+    <!-- Step 5 -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center g-4" data-aos="fade-up" data-aos-duration="800">
+                <div class="col-lg-6">
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <span class="step-number bg-primary text-white">5</span>
+                        <h3 class="fw-bold mb-0">Laporan Berhasil Dikirim</h3>
+                    </div>
+                    <p class="text-secondary">Selamat, laporan Anda telah terkirim! Kami akan memprosesnya, lalu
+                        menampilkannya di halaman laporan ini agar Anda dan pihak sekolah bisa memantau
+                        perkembangannya.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="mockup-frame">
+                        <div class="mockup-topbar">
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                            <span class="mockup-dot"></span>
+                        </div>
+                        <div class="mockup-body p-0">
+                            <img src="./images/ss5.png" alt="Tampilan Halaman Semua Laporan" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Step 5 end -->
+
+    <!-- CTA balik ke home -->
+    <section class="py-5 text-center">
+        <div class="container" data-aos="fade-up" data-aos-duration="800">
+            <h4 class="fw-bold mb-3">Sudah paham cara pakainya?</h4>
+            <a href="index.html" class="btn btn-primary">Kembali ke Home</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500" id="Footer" class="bg-primary-subtle py-4">
+        <div class="container">
+            <div class="row justify-content-between row-gap-5 row-gap-lg-0">
+                <div class="col-lg-4 text-dark">
+                    <div class="d-flex align-items-center gap-2 mb-2">
+                        <img src="./images/IDN logo.png" alt="IDN Logo" width="30"
+                            class="d-inline-block align-text-top rounded">
+                        <h3 class="mb-0 fw-bold">E-Report</h3>
+                    </div>
+                    <p class="opacity-75 lh-lg mb-0">Platform pelaporan digital resmi IDN Boarding School untuk
+                        mempermudah komunikasi antara siswa, guru, dan staf.</p>
+                </div>
+
+                <div class="col-lg-2 text-dark d-flex flex-column gap-2">
+                    <h4 class="fw-bold">Menu</h4>
+                    <a href="index.html#Home" class="footer-link text-dark text-decoration-none">Home</a>
+                    <a href="index.html#About" class="footer-link text-dark text-decoration-none">About</a>
+                    <a href="index.html#Service" class="footer-link text-dark text-decoration-none">Services</a>
+                    <a href="index.html#Recent" class="footer-link text-dark text-decoration-none">Recent Reports</a>
+                    <a href="Guide.html" class="footer-link text-dark text-decoration-none">Guide</a>
+                </div>
+
+                <div class="col-lg-4 d-flex flex-column gap-2">
+                    <h4 class="fw-bold text-dark">Contact Us!</h4>
+                    <a target="_blank" href="mailto:vhsidnboardingschool@idn.sch.id"
+                        class="fw-bold text-dark text-decoration-none footer-link d-flex align-items-center gap-2">
+                        <i class="bi bi-envelope"></i>
+                        vhsidnboardingschool@idn.sch.id
+                    </a>
+                    <a target="_blank" href="https://wa.me/6282171409224"
+                        class="fw-bold text-dark text-decoration-none footer-link d-flex align-items-center gap-2">
+                        <i class="bi bi-phone"></i>
+                        +62 821 7140 9224
+                    </a>
+                    <a target="_blank" href="https://maps.app.goo.gl/ek2cgofZeZ1z2VN77"
+                        class="fw-bold text-dark text-decoration-none footer-link d-flex align-items-center gap-2">
+                        <i class="bi bi-geo-alt"></i>
+                        Jl. Raya Jonggol-Dayeuh, Sukanegara, Kec. Jonggol, Kabupaten Bogor, Jawa Barat 16830
+                    </a>
+                </div>
+            </div>
+
+            <div class="copyright mt-4">
+                <p class="text-dark text-center mb-0">&copy; Copyright by <span class="fw-bold">IDN E-Report</span>
+                    2026, All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- cdn js bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            easing: 'ease-in-out'
+        });
+    </script>
+</body>
+
+</html>
